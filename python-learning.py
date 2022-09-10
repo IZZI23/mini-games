@@ -1,11 +1,20 @@
+# first python project,rolling dice mini-game
 
+import random
 
+def roll_a_dice():
+	while True:
+		start = input("would you like to roll a dice?")
+		if start.lower() == "y":
+			dice = random.randint(1,12)
+			print(dice)
+		elif start.lower() == "n":
+			print("bye")
+			break
+		else:
+			print("not a valid answer!")
 
-
-
-
-
-
+roll_a_dice()
 
 
 
@@ -106,20 +115,6 @@ cl_1.dis()
 print(cl_1.price)
 
 print(cl_2.depreciation())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
